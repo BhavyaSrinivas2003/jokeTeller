@@ -14,7 +14,6 @@ function Fun(){
         
         jokeTextEl.classList.add("d-none");
         spinnerEl.classList.remove("d-none");
-        let id = 0;
         let options = {
             method: "GET"
         };
@@ -29,5 +28,5 @@ function Fun(){
             })
     
     }
-    jokeBtnEl.addEventListener("click", display);
+    display()
 }
