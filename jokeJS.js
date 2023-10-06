@@ -1,14 +1,16 @@
-let jokeTextEl = document.getElementById("jokeText");
-let spinnerEl = document.getElementById("spinner");
-let jokeBtnEl = document.getElementById("jokeBtn");
 
-function displayJoke(jsonData) {
-    spinnerEl.classList.add("d-none");
-    jokeTextEl.classList.remove("d-none");
-    jokeTextEl.textContent = jsonData.value;
-}
+
+
 
 function display() {
+    let jokeTextEl = document.getElementById("jokeText");
+    let spinnerEl = document.getElementById("spinner");
+    let jokeBtnEl = document.getElementById("jokeBtn");
+    function displayJoke(jsonData) {
+        spinnerEl.classList.add("d-none");
+        jokeTextEl.classList.remove("d-none");
+        jokeTextEl.textContent = jsonData.value;
+};
     jokeTextEl.classList.add("d-none");
     spinnerEl.classList.remove("d-none");
     let id = 0;
